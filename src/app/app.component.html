@@ -1,0 +1,11 @@
+<app-bar-component
+  [isAuthenticated]="isAuthenticated$ | async"
+  [userData]="userData$ | async"
+  (logout)="logoutAction$.next($event)">
+</app-bar-component>
+
+<div class="o-content">
+  <route-view></route-view>
+</div>
+
+<notifications-container></notifications-container>

@@ -1,0 +1,30 @@
+<form
+  action=""
+  class="o-form"
+
+  [ngFormModel]="form"
+  (ngSubmit)="onSubmit()">
+
+  <error-container [key]="errorKey"></error-container>
+
+  <div class="o-frid">
+    <div class="o-frid__col  u-1/2">
+      <md-input
+        placeholder="Name"
+        ngControl="name"
+        [ngModel]="data.name">
+      </md-input>
+    </div>
+
+    <div class="o-frid__col  u-1/2">
+      <md-input
+        placeholder="E-mail"
+        ngControl="mail"
+        [ngModel]="data.mail">
+      </md-input>
+    </div>
+
+  </div>
+
+
+</form>

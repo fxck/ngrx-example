@@ -1,0 +1,23 @@
+<form
+  action=""
+  class="login-form-cmp__form"
+
+  [ngFormModel]="form"
+  (ngSubmit)="onSubmit()">
+
+  <error-container [key]="errorKey"></error-container>
+
+  <md-input
+    placeholder="Username"
+    ngControl="username"
+    [ngModel]="data.username">
+  </md-input>
+
+  <md-input
+    placeholder="Password"
+    ngControl="password"
+    type="password"
+    [ngModel]="data.password">
+  </md-input>
+
+</form>

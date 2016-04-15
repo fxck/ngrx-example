@@ -1,0 +1,37 @@
+///*------------------------------------*\
+//    #FRID / GRID
+//\*------------------------------------*/
+@import './node_modules/frid/src/settings.defaults';
+@import './node_modules/frid/src/settings.responsive';
+@import './node_modules/frid/src/tools.utils';
+@import './node_modules/frid/src/tools.responsive';
+@import './node_modules/frid/src/tools.widths';
+@import './node_modules/frid/src/tools.grow';
+@import './node_modules/frid/src/trumps.widths';
+@import './node_modules/frid/src/trumps.widths-responsive';
+@import './node_modules/frid/src/trumps.orders';
+@import './node_modules/frid/src/objects.grid';
+
+///*------------------------------------*\
+//    #INUIT
+//\*------------------------------------*/
+@import "./node_modules/inuit-normalize/generic.normalize";
+@import "./node_modules/inuit-reset/generic.reset";
+@import "./node_modules/inuit-box-sizing/generic.box-sizing";
+
+///*------------------------------------*\
+//    #SETTINGS
+//    will override inuit settings
+//\*------------------------------------*/
+
+@import "variables";
+
+
+///*------------------------------------*\
+//    #APP-GLOBAL-STYLES
+//\*------------------------------------*/
+
+@import "base/page";
+
+@import "objects/o-wrap";
+@import "objects/o-content";

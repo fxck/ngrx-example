@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.app-bar-component__menu {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.app-bar-component__menu_item {
+  vertical-align: middle;
+}
+
+.app-bar-component__menu_link {
+  position: relative;
+  border-bottom: 2px solid transparent;
+
+  text-decoration: none;
+  color: $theme_black;
+
+  opacity: 0.6;
+
+  transition: border 200ms, opacity 200ms;
+
+  .material-icons {
+    position: absolute;
+    left: 0;
+    top: -1px;
+
+    font-size: 20px;
+  }
+
+  &:hover,
+  &.is-active {
+    border-bottom-color: $theme_black;
+
+    opacity: 1;
+  }
+
+  &.has-icon {
+    padding-left: 23px;
+  }
+}

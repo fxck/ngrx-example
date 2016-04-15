@@ -1,0 +1,12 @@
+@import "../../../styles/variables";
+
+:host {
+  .people-list-component__link {
+    font-size: 20px;
+    color: $theme_primary;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

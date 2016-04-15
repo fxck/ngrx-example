@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.error-printer-cmp {
+  color: $theme_warn;
+  margin-bottom: $bu;
+}
+
+.error-printer-cmp__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

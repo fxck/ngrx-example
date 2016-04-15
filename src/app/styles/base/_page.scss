@@ -1,0 +1,7 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  font-family: $font-main;
+
+  color: $theme_black;
+  background: darken($theme_white, 2%);
+}

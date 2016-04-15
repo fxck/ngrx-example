@@ -1,0 +1,13 @@
+<md-list>
+  <md-list-item *ngFor="#item of data">
+    <img md-list-avatar [src]="'https://api.adorable.io/avatars/100/' + item.mail + '.png'" />
+    <h3 md-line>
+      <a
+        [linkTo]="'/people/' + item.id"
+        class="people-list-component__link">
+        {{ item.name }}
+      </a>
+    </h3>
+    <p md-line>{{ item.mail }}</p>
+  </md-list-item>
+</md-list>

@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+:host {
+  .notifications-component__item {
+    margin-bottom: $bu;
+  }
+
+  .notifications-component__image {
+    display: block;
+    width: 100%;
+  }
+
+  .notifications-component__name {
+    flex-basis: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    color: $theme_primary;
+  }
+}

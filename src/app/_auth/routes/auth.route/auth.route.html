@@ -1,0 +1,22 @@
+<div class="o-wrap">
+  <md-card>
+    <md-card-content>
+      <p>This is a smart route component. That is passing login function to the dumb component, which renders the form.</p>
+
+      <login-form-component
+        #loginForm
+        (login)="onLogin$.next($event)">
+      </login-form-component>
+
+      <p>This button is using local variable of the `login-form-component` and calling `onSubmit()` on it, which triggers submit</p>
+    </md-card-content>
+
+    <md-card-actions>
+      <button
+        md-raised-button color="primary"
+        (click)="loginForm.onSubmit()">
+        Login
+      </button>
+    </md-card-actions>
+  </md-card>
+</div>

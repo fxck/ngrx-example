@@ -1,0 +1,24 @@
+<md-card>
+  <md-card-subtitle>Cat bot - fresh cat image every 5 sec.</md-card-subtitle>
+
+  <div class="notifications-container__scroll">
+    <notifications-component [data]="notifications$ | async"></notifications-component>
+  </div>
+
+  <div class="notifications-container__button">
+    <button
+      *ngIf="(isRunning$ | async)"
+      (click)="onToggleStream$.next($event)"
+      md-raised-button
+      color="warn">
+      Stop
+    </button>
+    <button
+      *ngIf="!(isRunning$ | async)"
+      (click)="onToggleStream$.next($event)"
+      md-raised-button
+      color="primary">
+      Continue
+    </button>
+  </div>
+</md-card>

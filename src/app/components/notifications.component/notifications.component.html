@@ -1,0 +1,12 @@
+<div *ngFor="#item of data" class="notifications-component__item">
+  <div class="o-wrap">
+    <div class="o-frid">
+      <div class="o-frid__col-fixed  notifications-component__name">
+        Cat:
+      </div>
+      <div class="o-frid__col-auto">
+        <img [src]="item.payload" alt="" class="notifications-component__image">
+      </div>
+    </div>
+  </div>
+</div>

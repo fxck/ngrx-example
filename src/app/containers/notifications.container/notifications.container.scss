@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+:host {
+  position: fixed;
+  bottom: 0;
+  right: $bu;
+
+  width: 300px;
+  height: 400px;
+
+  md-card {
+    height: 100%;
+  }
+
+  .notifications-container__scroll {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+
+    height: 280px;
+    width: 100%;
+
+    overflow: auto;
+  }
+
+  .notifications-container__button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    padding: 10px;
+    width: 100%;
+
+    border-top: 1px solid darken($theme_white, 15%);
+  }
+}

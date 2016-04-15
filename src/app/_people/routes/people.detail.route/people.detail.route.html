@@ -1,0 +1,9 @@
+<div class="o-wrap">
+  <md-card>
+    <person-detail-component [data]="person$ | async"></person-detail-component>
+
+    <md-card-actions>
+      <a md-button [linkTo]="'/people/' + (person$ | async)?.id + '/edit'">Edit</a>
+    </md-card-actions>
+  </md-card>
+</div>

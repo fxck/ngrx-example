@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.logo-component {
+  display: block;
+}
+
+.logo-component__image,
+.logo-component__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-component__image {
+  max-width: 50px;
+  margin-right: $bu / 3;
+}
+
+.logo-component__text {
+  line-height: 16px;
+
+  color: darken($theme_white, 30%);
+
+  text-transform: uppercase;
+  font-size: 12px;
+}

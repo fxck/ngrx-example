@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+:host {
+  .logged-user-component__avatar-wrap {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+
+    background: $theme_black;
+
+    box-shadow: $shadow-z-1;
+    border-radius: 100%;
+  }
+
+  .logged-user-component__image {
+    display: block;
+    max-width: 100%;
+  }
+}

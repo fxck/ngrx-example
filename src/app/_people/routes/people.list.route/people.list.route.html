@@ -1,0 +1,24 @@
+<div class="o-wrap">
+  <md-card class="people-list-route__list-card">
+    <md-card-title>Existing people</md-card-title>
+    <people-list-component [data]="people$ | async"></people-list-component>
+  </md-card>
+
+  <md-card>
+    <md-card-title>Add person</md-card-title>
+    <person-form-component
+      #personForm
+      (onSubmit)="addAction$.next($event)"
+      [data]="{ name: null, mail: null}">
+    </person-form-component>
+
+    <md-card-actions>
+      <button
+        (click)="personForm.onSubmit()"
+        md-raised-button
+        color="primary">
+        Add
+      </button>
+    </md-card-actions>
+  </md-card>
+</div>

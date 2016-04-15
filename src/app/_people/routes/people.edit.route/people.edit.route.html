@@ -1,0 +1,18 @@
+<div class="o-wrap">
+  <md-card>
+    <person-form-component
+      #personForm
+      (onSubmit)="patchAction$.next($event)"
+      [data]="person$ | async">
+    </person-form-component>
+
+    <md-card-actions>
+      <button
+        (click)="personForm.onSubmit()"
+        md-raised-button
+        color="primary">
+        Update
+      </button>
+    </md-card-actions>
+  </md-card>
+</div>
