@@ -1,5 +1,5 @@
 # WIP: @nrgx example app(router, store, sagas, logger) 
-Fully reactive, utilizing normalizr, showcasing handling or authentization, xhr requests as well as websockets. 
+Fully reactive, utilizing normalizr, showcasing handling of authentization, xhr requests as well as websockets. 
 
 - clone 
 - `npm install` to install dependencies
