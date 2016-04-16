@@ -1,3 +1,10 @@
+# WIP: @nrgx example app(router, store, sagas, logger) 
+Fully reactive, utilizing normalizr, showcasing handling or authentization, xhr requests as well as websockets. 
+
+- clone 
+- `npm install` to install dependencies
+- `npm start` to run
+
 # TODO
 - [ ] reconsider folder naming with dots, finder thinks it's an extension
 - [ ] add readme
