@@ -86,7 +86,7 @@
     "@angular2-material/toolbar": "2.0.0-alpha.2",
 
     "normalizr": "^2.0.1",
-    "@ngrx/store": "^1.3.3",
+    "@ngrx/store": "1.3.3",
     "@ngrx/router": "0.2.2",
     "store-saga": "1.0.0-beta.8",
     "ngrx-store-logger": "^0.0.7",
