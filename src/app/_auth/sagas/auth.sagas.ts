@@ -23,7 +23,6 @@ const login = createSaga((_http: AppHttp): Saga<any> => {
   return saga$ => saga$
     .filter(whenAction(LOGIN_REQUEST))
     .delay(1)
-    // here would be your auth call in a mergeMap
     .mergeMap(
       saga$ => _http.post(
         'http://localhost:3100/login',
