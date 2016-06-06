@@ -1,3 +1,12 @@
+# Outdated - check out https://github.com/ngrx/example-app
+This example is outdated, using old versions of the lib, old file structure, before I update it, check out the official example at https://github.com/ngrx/example-app
+
+
+
+
+
+
+
 # WIP: @nrgx example app(router, store, sagas, logger) 
 Fully reactive, utilizing normalizr, showcasing handling of authentization, xhr requests as well as websockets. 
 
